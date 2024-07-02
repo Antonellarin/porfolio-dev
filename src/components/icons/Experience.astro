@@ -1,0 +1,49 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCIE = [
+  
+  {
+    date: "Junio 24 - Actualmente",
+    title: "Landing Page AA Studio Design",
+    company: "Proyecto Personal",
+    skills: "Skills: TypeScript, Tailwind, Framer Motion.",
+    description: "Desarrollo de una landing page para un emprendimiento que brinda servicios de marketing digital",
+    github: "https://github.com/Antonellarin/Studio-Design"
+  },
+  {
+    date: "Portfolio Web",
+    title: "Experiencia academica ",
+    company: "Bootcamp Alkemy",
+    description: "Diseñar y desarrrollar una aplicacion web de mi cv personal, diseñada con bootstrap, entender el flujo de github y subir el proyecto con dominio en la aplicacion ",
+    skills: "JavaScript, Html, Css",
+    github: "https://github.com/Antonellarin/Full-Stack-Developer"
+  },
+  {
+    date: "Abril 2023",
+    title: "Full Stack Developer - HealthMatters",
+    company: "Bootcamp Soy Henry",
+    description: "• Diseñar y desarrollar colaborativamente con SCRUM una aplicación web de medicina donde doctores puedan ofrecer sus servicios y los usuarios puedan adquirirlos",
+    skills: "NextJS, TailwindCSS, SWR, axios, chartJS, Sweet Alert 2, React,",
+    github: "https://github.com/Antonellarin/HealthMatters"
+  },
+  {
+    date: "Marzo 2023",
+    title: "Full Stack Developer - API Pokemon",
+    company: "Bootcamp Soy Henry",
+    description: "Diseñar y desarrollar una aplicacion que consuma los datos de la api pokeapi.co y los muestre a los distintos pokemones, desarrollar distintas funcionalidades, entre ellas, enrutado entre paginas, filtrar, mostrarlos en lista, y tambien que el usuario pueda crear su propio pokemon y se almacene en una base de datos.",
+    skills: "React, Redux, styled-component, axios, Express, sequelize, postgreSQL",
+    github: "https://github.com/Antonellarin/Pokemon"
+  },
+];
+---
+<section id="experiencia">
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
