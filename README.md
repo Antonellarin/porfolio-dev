@@ -21,8 +21,8 @@
 │   │   └── Figma, Adobe XD, Photoshop, Illustrator
 │   ├── Otras habilidades:
 │   │   └── Responsive Design, UX/UI, Accesibilidad web
-│   └── pages/
-│       └── index.astro
+│   └── 
+│       └── 
 └── package.json
 ```
 
